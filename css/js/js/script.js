@@ -1,6 +1,6 @@
 // Countdown Timer
 function countdown() {
-    const weddingDate = new Date("YYYY-MM-DDTHH:MM:SS"); // Enter wedding date here
+    const weddingDate = new Date("2025-06-28T14:00:00"); // Enter wedding date here
     const now = new Date().getTime();
     const timeLeft = weddingDate - now;
 
@@ -23,7 +23,7 @@ setInterval(countdown, 1000);
 
 // Google Maps Integration
 function initMap() {
-    const location = { lat: [LATITUDE], lng: [LONGITUDE] }; // Enter coordinates here
+    const location = { lat: [56,982] lng: [12,3965] }; // Enter coordinates here
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: location,
