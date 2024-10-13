@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Main Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>You're Invited!</h1>
+            <p>Join us as we tie the knot!</p>
+            <h2>[Bride's Name] & [Groom's Name]</h2>
+            <p class="date">[Wedding Date]</p>
+        </div>
+    </header>
+
+    <!-- Church Ceremony Section -->
+    <section id="ceremony" class="ceremony-section">
+        <div class="container">
+            <h2>Ceremony</h2>
+            <p><strong>Location:</strong> [Church Name]</p>
+            <p><strong>Address:</strong> [Church Address]</p>
+            <p><strong>Time:</strong> [Ceremony Time]</p>
+        </div>
+    </section>
+
+    <!-- Reception Section -->
+    <section id="reception" class="reception-section">
+        <div class="container">
+            <h2>Reception</h2>
+            <p><strong>Location:</strong> [Reception Venue Name]</p>
+            <p><strong>Address:</strong> [Reception Address]</p>
+            <p><strong>Time:</strong> [Reception Time]</p>
+        </div>
+    </section>
+
+    <!-- RSVP Form Section -->
+    <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="attendance">Will you attend?</label>
+                <select id="attendance" name="attendance">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>With love, [Bride's Name] & [Groom's Name]</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
