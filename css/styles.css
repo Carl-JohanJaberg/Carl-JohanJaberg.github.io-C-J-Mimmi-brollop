@@ -1,56 +1,109 @@
 /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+h1, h2, h3 {
     text-align: center;
 }
 
-/* Header Section */
-.header {
+p {
+    text-align: center;
+}
+
+/* Header/Landing Section */
+.landing {
     background-image: url('../img/background.jpg');
     background-size: cover;
+    background-position: center;
+    height: 100vh;
     color: white;
-    padding: 100px 0;
+    position: relative;
 }
 
-.header h1 {
-    font-size: 3em;
-    margin: 0;
+.landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header p {
-    font-size: 1.2em;
+.landing .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 
-.header .date {
+.countdown {
     font-size: 1.5em;
     margin-top: 20px;
 }
 
-/* Ceremony & Reception Section */
-.ceremony-section, .reception-section, .rsvp-section {
+/* Story Section */
+#our-story {
     padding: 50px 0;
-    background-color: #fff;
-    margin-bottom: 20px;
+    background-color: #f8f8f8;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-p {
-    font-size: 1.1em;
+.story-content img {
+    width: 40%;
+    margin-right: 20px;
 }
 
-/* RSVP Form */
+.story-content p {
+    width: 50%;
+}
+
+/* Event Details */
+#event-details {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.event-info {
+    margin-bottom: 30px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* RSVP Section */
+#rsvp {
+    padding: 50px 0;
+    background-color: white;
+}
+
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -63,21 +116,20 @@ input, select, button {
     margin: 10px 0;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+/* Map Section */
+#location {
+    padding: 50px 0;
+    background-color: #f8f8f8;
 }
 
-button:hover {
-    background-color: #45a049;
+#map {
+    width: 100%;
+    height: 400px;
 }
 
-/* Footer */
-.footer {
+footer {
+    padding: 20px;
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
 }
