@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Wedding Invitation</title>
+    <title>[Couple's Wedding]</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-
-    <!-- Main Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1>You're Invited!</h1>
-            <p>Join us as we tie the knot!</p>
-            <h2>[Bride's Name] & [Groom's Name]</h2>
-            <p class="date">[Wedding Date]</p>
+    <!-- Landing Page -->
+    <header class="landing">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>[Bride's Name] & [Groom's Name]</h1>
+            <p>We're Getting Married!</p>
+            <div class="countdown">
+                <span id="days">00</span> Days 
+                <span id="hours">00</span> Hours 
+                <span id="minutes">00</span> Minutes 
+                <span id="seconds">00</span> Seconds
+            </div>
         </div>
     </header>
 
-    <!-- Church Ceremony Section -->
-    <section id="ceremony" class="ceremony-section">
+    <!-- Our Story Section -->
+    <section id="our-story">
         <div class="container">
-            <h2>Ceremony</h2>
-            <p><strong>Location:</strong> [Church Name]</p>
-            <p><strong>Address:</strong> [Church Address]</p>
-            <p><strong>Time:</strong> [Ceremony Time]</p>
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <img src="img/bride-groom.jpg" alt="Bride and Groom">
+                <p>Once upon a time, we met, we laughed, and now we’re ready to start our next chapter together. Join us as we celebrate our love story!</p>
+            </div>
         </div>
     </section>
 
-    <!-- Reception Section -->
-    <section id="reception" class="reception-section">
+    <!-- Event Details Section -->
+    <section id="event-details">
         <div class="container">
-            <h2>Reception</h2>
-            <p><strong>Location:</strong> [Reception Venue Name]</p>
-            <p><strong>Address:</strong> [Reception Address]</p>
-            <p><strong>Time:</strong> [Reception Time]</p>
+            <h2>Event Details</h2>
+            <div class="event-info">
+                <h3>Ceremony</h3>
+                <p><strong>Location:</strong> [Church Name]</p>
+                <p><strong>Address:</strong> [Church Address]</p>
+                <p><strong>Time:</strong> [Ceremony Time]</p>
+            </div>
+            <div class="event-info">
+                <h3>Reception</h3>
+                <p><strong>Location:</strong> [Venue Name]</p>
+                <p><strong>Address:</strong> [Venue Address]</p>
+                <p><strong>Time:</strong> [Reception Time]</p>
+            </div>
         </div>
     </section>
 
-    <!-- RSVP Form Section -->
-    <section id="rsvp" class="rsvp-section">
+    <!-- Photo Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Photos</h2>
+            <div class="gallery-grid">
+                <img src="img/gallery/pic1.jpg" alt="Gallery Image 1">
+                <img src="img/gallery/pic2.jpg" alt="Gallery Image 2">
+                <img src="img/gallery/pic3.jpg" alt="Gallery Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp">
         <div class="container">
             <h2>RSVP</h2>
             <form id="rsvp-form">
@@ -61,11 +88,21 @@
         </div>
     </section>
 
+    <!-- Map Section -->
+    <section id="location">
+        <div class="container">
+            <h2>Location</h2>
+            <p>Find the directions to our ceremony and reception below:</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <p>With love, [Bride's Name] & [Groom's Name]</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Include Google Maps Script -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
 </body>
 </html>
