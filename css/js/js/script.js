@@ -1,6 +1,6 @@
 // Countdown Timer
 function countdown() {
-    const weddingDate = new Date("2025-06-28 10:00:00"); // Enter wedding date here
+    const weddingDate = new Date("28-06-2025 14:00:00"); // Enter wedding date here
     const now = new Date().getTime();
     const timeLeft = weddingDate - now;
 
