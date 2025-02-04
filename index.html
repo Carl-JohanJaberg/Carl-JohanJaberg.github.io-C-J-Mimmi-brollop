@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Our Wedding</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Updock&display=swap');
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 28, 2025 14:00:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="nedrakning"
+  // document.getElementById("nedrakning").innerHTML = days + "d " + hours + "h "
+  //+ minutes + "m " + seconds + "s ";
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("nedrakning").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Bröllop för</h1>
+      <p class="couple-names">Carl-Johan & Mimmi</p>
+      <p class="date">28 juni 2024 ・ Falkenberg</p>
+    </div>
+  </header>
+<!--
+  <section class="countdown">
+    <div class="block">
+      <span class="brick" id="days"></span>
+      <span>Dagar</span>
+    </div>
+    <div class="block">
+      <span class="brick" id="hours"></span>
+      <span>Timmar</span>
+    </div>
+    <div class="block">
+      <span class="brick" id="minutes"></span>
+      <span>Minuter</span>
+    </div>
+    <div class="block">
+      <span class="brick" id="seconds"></span>
+      <span>Sekunder</span>
+    </div>
+</section>
+-->
+
+<section class="details">
+    <img src="Resources/css/pictures2/IMG_1019.jpeg" alt="Gallery Image 2">
+    <div class="details-container">
+        <h1>Vi ska gifta oss!</h1> 
+        <p>Varmt välkommen till vårt bröllop. Här på hemsidan hittar ni förhoppningsvis all information ni kan tänkas behöva.
+        Längst ner på sidan finns anmälningsformuläret för att <a href="#osa">OSA</a>. Svara gärna om ni kommer senast 20 maj. Vi ser fram emot att fira denna dag tillsammans med er alla.</p>
+        <div class="details-content">
+            <div class="details-information">
+            <h2>Ceremoni</h2>
+            <p><strong>Plats:</strong> Morups kyrka</p>
+            <p><strong>Address:</strong> Askhultsvägen 4, 311 90 Morup</p>
+            <p><strong>Datum:</strong> 28 juni 2025</p>
+            <p><strong>Tid:</strong> 14.00</p>
+        </div>
+        <div class="details-information">
+            <h2>Reception</h2>
+            <p><strong>Plats:</strong> Långås Loge </p>
+            <p><strong>Address:</strong> Långås 331, 311 93 Långås</p>
+            <p><strong>Datum:</strong> 28 juni 2025</p>
+            <p><strong>Tid:</strong> 16.00</p>
+        </div> 
+        </div>
+        
+    </div>
+    
+   
+
+</section>
+  <section class="our-story">
+    <h1>Vår historia</h1>
+    <p>För nästan exakt 7år sedan träffades vi för första gången. Året var 2018 och på vår första dejt såg vi EM-matchen mellan Tyskland och Sverige på Nya Ullevi. Det var en nervkittlande match och Sverige förlorade tyvärr med 2-1 efter en tysk frispark i 95:e minuten... Trots att Sverige inte levererade så var det en kväll som bjöd på skratt, fina stunder och några grodor. Sommaren 2018 fortsatte att leverera fina stunder tillsammans och vi blev kära, resten är historia! 
+    </p>
+    <div class="image-grid">
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_4935.JPG" alt="Gallery Image 7"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_0929.jpeg" alt="Gallery Image 3"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_0436.jpeg" alt="Gallery Image 1"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_3582 (1).jpeg" alt="Gallery Image 2"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/Cykel.jpg" alt="Gallery Image 5"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/karaoke.png" alt="Gallery Image 6"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_2112.JPG" alt="Gallery Image 8"></div>
+        <div class="grid-item"><img src="Resources/css/pictures2/IMG_1307.JPG" alt="Gallery Image 9"></div>
+    </div>
+  </section>
+
+  <section class="information">
+    <div class="details-grid">
+        <div class="grid-item">
+            <h1>27 juni</h1>
+            <p>Dagen innan bröllopet bjuder vi in till gött häng! Vi hoppas på bra väder då vi planerat några utomhusaktiviteter, se till att packa oömma kläder. Under kvällen bjuder vi på enklare mat och dryck. Ni är givetvis välkommna även om ni inte kan eller vill delta i aktiviteterna, det finns alltid behov av dommare eller poängräknare! Anmälan till förhänget görs i OSA-formuläret längst ner på sidan. Mer information om tid och plats kommer närmre bröllopet. </p>
+        </div>
+        <div class="grid-item">
+            <h1>28 juni</h1>
+            <p>Lördagen den 28 Juni är ni hjärtligt välkomna till vårt bröllop. Vigseln kommer hållas i Morups Kyrka kl 14 och efter vigseln bär det vidare till Långås Loge för brudskål, middag och festligheter. Brudskålen planeras runt kl. 16, dessförinnan finns det dryck, tilltugg och lekar vid logen. Välkommna!</p>
+        </div>
+        <div class="grid-item">
+            <h1>29 juni</h1>
+            <p>Dagen Efter... Alternativen är många i sommarstaden Falkenberg! Man kan hänga på stranden, njuta på spa, spela lite golf, eller något helt annat! Vi kommer låta ork och väder styra vår dag men se till att ta tillfället i akt att njuta av Falkenberg.</p>
+        </div>
+    </div>
+  </section> 
+  
+  <section id="nyttig-info">
+      <h1>Transport & boende</h1> 
+      <h2>Bil & parkering</h2>
+      <p>Det är enkelt att ta sig till kyrkan med bil och sedan vidare därifrån till festlokalen.</p>
+      <p>Parkering finns både vid kyrkan och vid Långås Loge där festen sedan håller till. Det finns gott om plats så även tält och husbilar går utmärkt att ta med!</p>
+      <h2>Buss</h2> 
+      <p>Det går även att åka buss mellan kyrkan och festlokalen. Man tar då buss 553 från Morups kyrka till Långås Morupsvägen (Sök i appen "Hallandstrafiken"). Begränsat antal avgångar, så vi rekomenderar att försöka samåka med någon med bil. </p>
+      <h2>Taxi/Uber</h2> 
+      <p>Följande taxialternativ finns i Falkenberg; Taxiraketen & Taxi Falkenberg.</p>
+      <h2>Boende</h2>   
+      <p>Det finns gott om trevliga ställen att bo på i Falkenberg. Några förslag kommer här: Strandbaden, Ocean, Grand Hotel, Nya Pallas, Hotell Hamngatan, Värdshuset Hwitan, Skrea Camping, Hansagårds Camping. </p> 
+</section>
+
+<section>
+    <h1>Klädkod</h1>
+    <h2>Sommarfin</h2>
+    <p>Eftersom sommarfin kan anses vara spretig så skall vi försöka gör det lättare för er våra kära gäster. Ni kommer väldigt långt på sunt förnuft dvs. ljust, helt och rent men vår syn på klädkoden är ljus kavaj. För herrarna kan ni välja en härlig avslappnad linnekostym eller uddakavaj men visar väderprognosen högsommarvärme så kan ni omvärdera er outfit och köra en skjorta med dressad byxa istället. Väst och slips kan ni ta och lämna hemma (om ni vill). 
+    För damerna är rekommendationen en ljus, finare klänning men inte så fin att den går över i aftonklänning. </p>
+</section>
+</section>
+
+<!-- Presenter till Brudparet -->
+<section>
+    <h1>Presenter till brudparet</h2>
+    <p> Vi önskar inte några presenter till bröllopet. Det viktigaste är att ni vill dela en roligt dag med oss. Vill man trots detta ge en present så uppskattar vi ett bidrag till vår bröllopsresa. Ni kan då swisha till Lovisa Jäberg 0738-44 59 12 som samlar ihop alla swish till brudparet.</p>
+</section> 
+
+<section class="toastmasters">
+    <div class="text-frame">
+        <h1>Toastmasters har ordet!</h1>
+        <p>Tal, lekar, eller andra initiativ uppmuntras och välkomnas!</p>
+        <p>Anmälan av tal eller annat påhitt görs till oss, Annie och David. Vi kommer att vara era guider under kvällen och tillsammans med er skall vi se till att det blir en fantastisk afton.</p>
+        <p>Skicka era bidrag till: david.chlebek97@gmail.com </p>
+    </div>
+    <img src="Resources/css/pictures2/20221112_120626.jpg" alt="Toast Masters">
+</section>
+
+<section class="rsvp">
+<h1>Anmälan</h1>
+    <p>OSA Senast den 20 Maj</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6bM9ZK0d0ccRXV3iIJfnPrXdqbz65i4JbOUXduBpEI19m5g/viewform?embedded=true" frameborder="0">Loading…</iframe>
+</section>
+
+<section> 
+    <h1>Kontakt</h1> 
+    <p><strong>Toastmasters</strong>
+    <br>david.chlebek97@gmail.com</br>
+    </p>
+    <p><strong>Brudparet</strong>
+    <br>Carljohan.jaberg@gmail.com / 0703-37 16 92 </br> 
+    </p>
+<!--<img id="lastimg" src="Resources/css/pictures/Banner20242.jpg">-->
+    <p>Shoutout till Lovisa som hjälpe oss med hemsidan <3 </p>
+</section>
+  
+
+  <footer>
+    <a href="https://www.vecteezy.com/free-png/flowers-wedding">Flowers Wedding PNGs by Vecteezy</a>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
