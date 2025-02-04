@@ -1,0 +1,366 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall design */
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    background-color: #e8dfda;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(Resources/css/pictures2/image-from-rawpixel-id-16340933-png.png);
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Ensures the image doesn’t repeat */
+    background-attachment: fixed;  /* Keeps the image fixed (you may want to disable on small screens) */
+    background-size: cover;  /* Default for larger screens */
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    /*background: #ffcccb; /* Soft pink */
+    /*color: #fff;
+    text-align: center;*/
+    padding: 10rem 0 40rem 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #2c3251;
+  }
+  
+  header .couple-names {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: "Parisienne";
+    color: rgb(254, 251, 249);
+    letter-spacing: -0.05rem;
+  }
+
+  header .date {
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #2c3251;
+  }
+
+  .block {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 40px 10px 40px 10px;
+    text-align: center;
+    font-family: "Frank Ruhl Libre";
+  }
+  
+  .brick {
+    background-color: #c18a7f;
+    width: 110px;
+    height: 110px;
+    align-content: center;
+    border-radius: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 40px;
+    margin: 0 100px 60px 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  section h1 {
+    font-family: "Parisienne";
+    color: #2c3251;
+    /*color: #734238; Gamla färgen*/
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 400;
+    color: #2c3251;
+    margin: 1rem 0;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .countdown {
+    color: #dccec6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .information h1 {
+    text-align: center;
+    color: #2c3251;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details .details-container {
+    margin-left: 2rem;
+}
+
+.details .details-information {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.details .details-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.details .details-h1 {
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 100;
+    color: #734238;
+}
+
+.details img {
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.information .details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;  /* Adds space between the items */
+    margin: 1rem;
+}
+
+.information .grid-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items in a row with a gap */
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.our-story p {
+    padding-bottom: 40px;
+}
+  
+    .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Flexible grid */
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%; /* Creates a square aspect ratio by default */
+        position: relative; /* So images can be absolutely positioned inside */
+        overflow: hidden; /* Ensures images don’t overflow their containers */
+    }
+
+    .grid-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures images cover the area without stretching/distorting */
+    }
+
+    .toastmasters {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .toastmasters img {
+        height: auto;
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .toastmasters .text-frame {
+        padding-right: 4rem;
+    }
+
+    .rsvp {
+        text-align: center;
+    }
+
+    iframe {
+    height: 120vh;
+    width: 100%;
+    margin: auto; /* Center the container horizontally */
+  }
+
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 1000px) {
+    body {
+        background-image: url(Resources/css/pictures2/blå\ blomma\ small\ screens.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: contain;  /* Default for larger screens */    
+        background-position-y: 8rem;
+    }
+
+    header {
+        padding: 10rem 0 40rem 0;
+    }
+
+    .information .grid-item {
+        flex: 1 1 100%;  /* 1 item per row on smaller screens */
+    }
+
+    .details .details-container {
+        margin-left: 0;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header .couple-names {
+        font-size: 2.5rem;
+    }
+    
+    header .date {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 40px;
+        margin: 20px;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details .details-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .details img {
+        width: 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* Flexible grid */
+        gap: 5px;
+    }
+
+    .toastmasters {
+        flex-direction: column;
+    }
+
+    .toastmasters img {
+        width: 100%;
+    }
+
+    .toastmasters .text-frame {
+        padding-right: 0;
+    }
+
+    @media (max-width: 350px) {
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: contain;  /* Default for larger screens */
+            background-position-y: 0;        }
+
+        header {
+            padding: 10rem 0 10rem 0;
+        }
+        
+        header h1 {
+            font-size: 1.2rem;
+          }
+      
+          header .couple-names {
+              font-size: 2.2rem;
+          }
+          
+          header .date {
+              font-size: 1.2rem;
+          }
+
+          .image-grid {
+            grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr)); /* Flexible grid */
+            gap: 5px;
+        }
+
+        section h1 {
+            font-size: 2rem;
+        }
+    
+        section h2 {
+            font-size: 1.2rem;
+        }
+
+        section p {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+          }
+
+          
+    }
+  
+  }
+  

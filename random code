@@ -1,0 +1,131 @@
+Här på denna sida kommer ni att hitta all information ni behöver för att vara en del av vår speciella dag. Utforska detaljerna om ceremonin, ta reda på var Regementsgården ligger och hitta inspiration för att delta i vårt firande på distans om ni inte kan vara med oss personligen.
+    
+    Vi ser fram emot att dela denna dag med er alla och känner oss tacksamma för att ha er som vittnen till vår kärleksfulla förening. Låt oss tillsammans skapa minnen som kommer att vara en del av vår berättelse för resten av livet. Tack för att ni delar denna glädjefyllda stund med oss!
+ 
+
+      <div class="quiz-container">
+  <div class="question" id="question1">
+    <p>1. What is the capital of France?</p>
+    <ul class="options" id="options1">
+      <li class="option" onclick="checkAnswer(1, 'A')">A. Paris</li>
+      <li class="option" onclick="checkAnswer(1, 'B')">B. Berlin</li>
+      <li class="option" onclick="checkAnswer(1, 'C')">C. Madrid</li>
+    </ul>
+  </div>
+
+  <div class="question" id="question2">
+    <p>2. Which planet is known as the Red Planet?</p>
+    <ul class="options" id="options2">
+      <li class="option" onclick="checkAnswer(2, 'A')">A. Mars</li>
+      <li class="option" onclick="checkAnswer(2, 'B')">B. Venus</li>
+      <li class="option" onclick="checkAnswer(2, 'C')">C. Jupiter</li>
+    </ul>
+  </div>
+
+  <div class="question" id="question3">
+    <p>3. What is the largest mammal in the world?</p>
+    <ul class="options" id="options3">
+      <li class="option" onclick="checkAnswer(3, 'A')">A. Elephant</li>
+      <li class="option" onclick="checkAnswer(3, 'B')">B. Blue Whale</li>
+      <li class="option" onclick="checkAnswer(3, 'C')">C. Giraffe</li>
+    </ul>
+  </div>
+
+  <div class="question" id="question4">
+    <p>4. Who wrote the play 'Romeo and Juliet'?</p>
+    <ul class="options" id="options4">
+      <li class="option" onclick="checkAnswer(4, 'A')">A. William Shakespeare</li>
+      <li class="option" onclick="checkAnswer(4, 'B')">B. Jane Austen</li>
+      <li class="option" onclick="checkAnswer(4, 'C')">C. Charles Dickens</li>
+    </ul>
+  </div>
+
+  <div class="question" id="question5">
+    <p>5. What is the largest ocean on Earth?</p>
+    <ul class="options" id="options5">
+      <li class="option" onclick="checkAnswer(5, 'A')">A. Atlantic Ocean</li>
+      <li class="option" onclick="checkAnswer(5, 'B')">B. Indian Ocean</li>
+      <li class="option" onclick="checkAnswer(5, 'C')">C. Pacific Ocean</li>
+    </ul>
+  </div>
+
+  <div id="summary" style="display: none;">
+    <h2>Quiz Summary</h2>
+    <ul id="summaryList"></ul>
+  </div>
+</div>
+
+<script>
+  let currentQuestion = 1;
+  let correctAnswers = 0;
+
+  function showQuestion(questionNumber) {
+    const currentQuestionElement = document.getElementById(`question${questionNumber}`);
+    const nextQuestionElement = document.getElementById(`question${questionNumber + 1}`);
+    if (currentQuestionElement) {
+      currentQuestionElement.style.display = 'block';
+      if (nextQuestionElement) {
+        nextQuestionElement.style.display = 'none';
+      }
+    }
+  }
+
+  function checkAnswer(questionNumber, selectedOption) {
+    // Reset previous selections
+    resetOptions(questionNumber);
+
+    // Highlight the selected option
+    document.getElementById(`options${questionNumber}`).querySelector(`[onclick="checkAnswer(${questionNumber}, '${selectedOption}')"]`).classList.add('selected');
+
+    // Check if the selected option is correct
+    if (selectedOption === 'A' && questionNumber === 1) {
+      document.getElementById(`options${questionNumber}`).querySelector('[onclick="checkAnswer(1, \'A\')"]').classList.add('correct');
+      correctAnswers++;
+    } else if (selectedOption === 'B' && questionNumber === 2) {
+      document.getElementById(`options${questionNumber}`).querySelector('[onclick="checkAnswer(2, \'B\')"]').classList.add('correct');
+      correctAnswers++;
+    } else if (selectedOption === 'B' && questionNumber === 3) {
+      document.getElementById(`options${questionNumber}`).querySelector('[onclick="checkAnswer(3, \'B\')"]').classList.add('correct');
+      correctAnswers++;
+    } else if (selectedOption === 'A' && questionNumber === 4) {
+      document.getElementById(`options${questionNumber}`).querySelector('[onclick="checkAnswer(4, \'A\')"]').classList.add('correct');
+      correctAnswers++;
+    } else if (selectedOption === 'C' && questionNumber === 5) {
+      document.getElementById(`options${questionNumber}`).querySelector('[onclick="checkAnswer(5, \'C\')"]').classList.add('correct');
+      correctAnswers++;
+    } else {
+      document.getElementById(`options${questionNumber}`).querySelector(`[onclick="checkAnswer(${questionNumber}, '${selectedOption}')"]`).classList.add('incorrect');
+    }
+
+    // Move to the next question or show the summary
+    currentQuestion++;
+    if (currentQuestion <= 5) {
+      showQuestion(currentQuestion);
+    } else {
+      showSummary();
+    }
+  }
+
+  function resetOptions(questionNumber) {
+    const options = document.getElementById(`options${questionNumber}`).querySelectorAll('.option');
+    options.forEach(option => {
+      option.classList.remove('selected', 'correct', 'incorrect');
+    });
+  }
+
+  function showSummary() {
+    const summaryList = document.getElementById('summaryList');
+    summaryList.innerHTML = `<li>Correct Answers: ${correctAnswers} out of 5</li>`;
+    document.getElementById('summary').style.display = 'block';
+  }
+
+  // Show the first question initially
+  showQuestion(1);
+</script>
+
+<!--  </div>  -->  
+<div class="background-container1">
+    <h1><br></br></h1>
+    <p class="Intro2"><br>
+     </p>
+</div>
